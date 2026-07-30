@@ -7,3 +7,5 @@
 
   <p><sub><i>Generated automatically using <a href="https://github.com/x0rzavi/github-readme-terminal">x0rzavi/github-readme-terminal</a> (Catppuccin Mocha Theme)</i></sub></p>
 </div>
+
+---

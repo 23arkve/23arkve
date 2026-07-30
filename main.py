@@ -33,7 +33,7 @@ def main():
     time_now = datetime.now(ZoneInfo("Asia/Manila")).strftime("%Y")
     
     t.gen_text("JB BIOS v1.0.11 initializing", 1)
-    t.gen_text(f"Copyright (C) {time_now}, \x1b[95m23arkve (Bea)\x1b[0m", 2)
+    t.gen_text(f"Copyright (C) {time_now}, \x1b[95m23arkve\x1b[0m", 2)
     t.gen_text("\x1b[94mJB OS ReadMe Terminal - Catppuccin Mocha Edition\x1b[0m", 4)
     t.gen_text("Krypton(tm) GIFCPU - 250Hz", 6)
     t.gen_text("Press \x1b[94mDEL\x1b[0m to enter SETUP, \x1b[94mESC\x1b[0m to skip Memory Test", 7)
@@ -104,8 +104,8 @@ def main():
     t.clone_frame(5)
     t.toggle_show_cursor(False)
 
-    # exact octocat mona lines from x0rzavi.py (without leading empty line)
-    mona_ascii = """\x1b[49m     \x1b[90;100m}}\x1b[49m     \x1b[90;100m}}\x1b[0m
+    # exact octocat mona lines
+    mona_ascii = """
     \x1b[49m    \x1b[90;100m}}}}\x1b[49m   \x1b[90;100m}}}}\x1b[0m
     \x1b[49m    \x1b[90;100m}}}}}\x1b[49m \x1b[90;100m}}}}}\x1b[0m
     \x1b[49m   \x1b[90;100m}}}}}}}}}}}}}\x1b[0m
@@ -155,12 +155,13 @@ def main():
     \x1b[30;105m 23arkve@GitHub \x1b[0m
     -----------------------------------
     \x1b[96mName:      \x1b[93mBea\x1b[0m
-    \x1b[96mRole:      \x1b[93mFront-end Dev & UI/UX Designer\x1b[0m
-    \x1b[96mEdu:       \x1b[93m4th Year BS CS @ UP Baguio\x1b[0m
+    \x1b[96mRole:      \x1b[93mFrontend Dev\x1b[0m
+    \x1b[96mEdu:       \x1b[93m4th Year CS @ UP Baguio\x1b[0m
     \x1b[96mFocus:     \x1b[93mReact, TailwindCSS, Figma, Next.js\x1b[0m
     \x1b[96mLanguages: \x1b[93mC, C++, JS/TS, Python, Java, PHP\x1b[0m
+    \x1b[96mLearning:  \x1b[93mthree.js, p5.js, Spline\x1b[0m
     \x1b[96mDesign:    \x1b[93mFigma, Illustrator, Photoshop, Blender\x1b[0m
-    \x1b[96mInterests: \x1b[93mPhotography, Side Quests\x1b[0m
+    \x1b[96mInterests: \x1b[93mphotography, side quests, walking\x1b[0m
     -----------------------------------
     \x1b[30;105m Contact \x1b[0m
     \x1b[96mLinkedIn:  \x1b[93mlinkedin.com/in/jbnovesteras\x1b[0m
@@ -171,8 +172,8 @@ def main():
     """
 
     # generate octocat and user details starting at row 3 right below the command prompt
-    t.gen_text(mona_ascii, 3)
-    t.gen_text(user_info_text, 3, col_num=35, contin=True)
+    t.gen_text(mona_ascii, 4)
+    t.gen_text(user_info_text, 4, col_num=35, contin=True)
     
     # extended pause on stats screen (120 frames = ~8 seconds)
     t.clone_frame(120)
