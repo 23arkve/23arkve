@@ -1,3 +1,5 @@
+![](https://komarev.com/ghpvc/?username=y23arkve&color=ff69b4)
+
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./output.gif">
@@ -6,7 +8,6 @@
   </picture>
 
   <p><sub><i>Generated automatically using <a href="https://github.com/x0rzavi/github-readme-terminal">x0rzavi/github-readme-terminal</a> (Catppuccin Mocha Theme)</i></sub></p>
-  ![](https://komarev.com/ghpvc/?username=y23arkve&color=ff69b4)
 </div>
 
 ---
